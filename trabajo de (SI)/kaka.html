@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Carrera de Kaká</title>
+ 
+</head>
+<body>
+
+  <h1>Trayectoria de Ricardo Kaká</h1>
+  <h2 id="titulo-etapa">Selecciona un Club</h2>
+    <a href="Sao Paulo.html"> (sao paulo)</a>
+    <a href="AC milan.html"> (AC Milan)</a>
+    <a href="Real Madrid.html"> (Real Madrid)</a>
+   <a href="Orlando City SC.html"> (orlando city SC)</a>
+   <a href="Seleccion de Brasil.html"> (Seleccion de Brasil)</a>
+  <hr>
+  <main id="info-carrera">
+    <p id="descripcion-etapa">Ricardo Izecson dos Santos Leite, conocido futbolísticamente como Kaká,<br> fue uno de los mediocampistas ofensivos más desequilibrantes y elegantes<br> de las décadas de 2000 y 2010. Caracterizado por su potente zancada, visión de juego, precisión<br> en el pase y capacidad goleadora, alcanzando la cima del fútbol mundial al ganar el Balón de Oro y el premio FIFA World Player en 2007..</p>
+    <img src="imagenes de kaka/kaka(Formal).jpg" alt="kaka" width="250">
+    <h3 id="descripcion-etapa">haz click en el enlace de abajo para ir a su wikipedia o responde el quiz.</h3>
+  </main>
+
+<button id="btn-historial">Ir a wikipedia</button>
+
+    <script>
+        const btnHistorial = document.getElementById('btn-historial');
+        btnHistorial.addEventListener('click', () => {
+                window.location.href = "https://es.wikipedia.org/wiki/Kak%C3%A1";
+            }
+        );
+    </script>
+
+    <script src="script.js"></script>
+  <script src="script.js"></script>
+
+  <button id="quiz"></button>
+ <script>
+  const contenedor = document.getElementById("quiz");
+
+const titulo = document.createElement("h3");
+titulo.textContent = "¿Kaká entra en el Top 10 histórico de Brasil?";
+
+const btnSi = document.createElement("button");
+btnSi.textContent = "Sí";
+
+const btnNo = document.createElement("button");
+btnNo.textContent = "No";
+
+const mensaje = document.createElement("p");
+
+btnSi.addEventListener("click", () => {
+  mensaje.textContent = "claro que si crack";
+});
+
+btnNo.addEventListener("click", () => {
+  mensaje.textContent = "como que no.";
+});
+
+contenedor.appendChild(titulo);
+contenedor.appendChild(btnSi);
+contenedor.appendChild(btnNo);
+contenedor.appendChild(mensaje);
+ </script>
+</body>
+</html>
